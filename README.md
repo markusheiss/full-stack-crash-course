@@ -4,7 +4,7 @@ This is a 12 hours course on Udemy made by Jonas Schedtmann.
 
 ### Content of the course
 
-* HTMl
+* HTML
 * CSS
 * Storing the data in a Supabase database
 * JavaScript
