@@ -212,6 +212,7 @@ ul {
     body {
         padding: 32px 48px;
     }
+
     .fact-form {
         flex-direction: column;
         align-items: stretch;
@@ -224,7 +225,21 @@ ul {
 }
 
 @media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        row-gap: 24px;
+        padding-bottom: 32px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
     .main {
         grid-template-columns: 1fr;
+    }
+
+    .vote-buttons button {
+        font-size: 1.6rem;
     }
 }
