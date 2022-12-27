@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +19,7 @@
           <img src="./starter-files/logo.png" alt="Today I learned logo" />
           <h1>Today I Learned!</h1>
         </div>
-        <button class="btn btn-large btn-share">Share a fact</button>
+        <button class="btn btn-large btn-open">Share a fact</button>
       </header>
 
       <form class="fact-form hidden">
@@ -37,7 +38,9 @@
       <main class="main">
         <aside>
           <ul>
-            <li class="category"><button class="btn btn-all-categories">All</button></li>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
             <li class="category">
               <button
                 class="btn btn-category"
@@ -57,7 +60,7 @@
           </ul>
         </aside>
         <section>
-          <ul>
+          <ul class="facts-list">
             <li class="fact">
               <p>
                 React is being developed by Meta (formerly facebook)
