@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #292524;
+  color: #fafaf9;
+  font-family: 'Sono', sans-serif;
+  padding: 48px 64px 0;
+}
+
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+
+.header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
+.fact-form input,
+.fact-form select {
+  background-color: #78716c;
+  width: 220px;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+}
+
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
+.fact-form input::placeholder {
+  color: #a8a29e;
+}
+
+.fact-form span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 18px;
+}
+
+h1 {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Coiny', sans-serif;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+  height: calc(100vh - 68px - 40px - 48px - 48px);
+}
+
+.fact {
+  font-size: 2rem;
+  line-height: 1.4;
+  background-color: #44403c;
+  margin-bottom: 16px;
+  padding: 16px 30px;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 16px;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: 'Coiny', sans-serif;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+}
+
+.vote-buttons {
+  display: flex;
+  flex-shrink: 0;
+  margin-left: auto;
+  gap: 12px;
+}
+
+.vote-buttons button {
+  background-color: #78716c;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  padding: 6px 12px;
+  transition: 0.3s;
+}
+
+.vote-buttons button:hover {
+  background-color: #57534e;
+  cursor: pointer;
+}
+
+.vote-buttons button:disabled {
+  background-color: #44403c;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.source:link,
+.source:visited {
+  color: #a8a29e;
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+.source:hover,
+.source:active {
+  color: #3b82f6;
+}
+
+.btn {
+  font-family: 'Coiny', sans-serif;
+  color: inherit;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient(135deg, #3b82fa, #ef4444, #16a34a, #eab300);
+  border: none;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(110%) rotate(-2deg);
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+
+.btn-all-categories {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+
+.category {
+  margin-bottom: 16px;
+}
+
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    row-gap: 24px;
+    padding-bottom: 32px;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .vote-buttons button {
+    font-size: 1.6rem;
+  }
+}
